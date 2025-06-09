@@ -6,8 +6,12 @@
 Automatically generate engaging YouTube Shorts from longer videos using AI. This tool leverages advanced AI to identify the most compelling moments in any video, creating perfectly timed, content-aware clips optimized for social media engagement.
 
 ## 🎬 Demo Video
-👉 [Click here to watch the demo]() *(Upload and replace this link)*  
-![demo](![alt text](image.png)) *(Create and replace this thumbnail)*
+👉 [yt link here]() 
+![demo](![basic format](image.png))
+![types we can get](image-4.png)
+![transcribing](image-1.png)
+![getting and cutting clips](image-2.png)
+![getting educational shorts](image-3.png)
 
 ## 🛠️ Features
 - ✅ **Content-aware clips**: Generate variable-length clips (15-90 seconds) optimized for engagement
@@ -27,7 +31,7 @@ Automatically generate engaging YouTube Shorts from longer videos using AI. This
 - Google Gemini (optional alternative)
 
 ## 🏗️ Architecture Diagram
-![Architecture Diagram](https:///your-architecture-diagram.png) *(Create and replace this diagram)*
+![Architecture Diagram](![architechture diagram](image-5.png)) 
 
 **Architecture Flow:**
 1. **Input Processing** - YouTube URL or local video file is processed
@@ -98,5 +102,4 @@ There are two ways to run the application:
 
 ## 🏆 Submission Tags
 - `agent-demo-track`
-- `Hackathon 2025`
-i.imgur.com
+- `🤖 Gradio Agents & MCP Hackathon 2025 🚀`
