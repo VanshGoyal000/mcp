@@ -1,60 +1,84 @@
-# 🎬 YouTube Shorts Generator — AI-Powered Video Highlights to Engaging Shorts
+# 🎬 YouTube Shorts Generator — *AI-Powered Highlights to Viral Clips*
 
-**Track:** `agent-demo-track`
+> **Track:** `agent-demo-track`  
+> ✨ Turn long-form videos into scroll-stopping YouTube Shorts using AI — fast, accurate, and automated.
+
+---
 
 ## 🧠 Overview
-Automatically generate engaging YouTube Shorts from longer videos using AI. This tool leverages advanced AI to identify the most compelling moments in any video, creating perfectly timed, content-aware clips optimized for social media engagement.
 
-## 🎬 Demo Video
-👉 [yt link here]() 
-![demo](![basic format](image.png))
-![types we can get](image-4.png)
-![transcribing](image-1.png)
-![getting and cutting clips](image-2.png)
-![getting educational shorts](image-3.png)
+**YouTube Shorts Generator** transforms long videos into engaging, high-quality Shorts using AI. It automates the entire process — from transcription and highlight detection to clipping and captioning — saving creators hours of editing time and thousands in production cost.
 
-## 🛠️ Features
-- ✅ **Content-aware clips**: Generate variable-length clips (15-90 seconds) optimized for engagement
-- ✅ **Smart highlight detection**: Automatically find the most engaging moments based on content type
-- ✅ **Multiple content types**: Choose between interesting, funny, dramatic, educational, surprising, or inspiring moments
-- ✅ **Automatic transcription**: Uses Whisper model to transcribe audio
-- ✅ **Caption generation**: Create engaging titles and captions for your shorts
-- ✅ **Support for YouTube URLs**: Process videos directly from YouTube
+Whether you're an educator, podcaster, or content creator, this tool helps you repurpose long content into viral-ready clips for platforms like **YouTube Shorts**, **Instagram Reels**, and **TikTok**.
+
+---
+
+## 🎥 Demo Video
+
+👉 [🔗 Watch the Demo](https://youtu.be/PvXmVN5Y23M)
+
+![Demo Screens](image.png)  
+![Content Types](image-4.png)  
+![Transcription Process](image-1.png)  
+![Clipping Logic](image-2.png)  
+![Educational Shorts Example](image-3.png)
+
+---
+
+## 🚀 Features
+
+- ✅ **Smart Highlight Detection**: Automatically selects attention-grabbing moments based on content type.
+- ✅ **Flexible Clip Duration**: Generate 15–90 second videos tailored to platform requirements.
+- ✅ **Multiple Content Modes**: Choose from `Educational`, `Funny`, `Dramatic`, `Surprising`, `Inspiring`, etc.
+- ✅ **Accurate Transcription**: Powered by OpenAI Whisper for top-tier audio-to-text performance.
+- ✅ **AI-Generated Captions & Titles**: Enhance engagement with catchy, context-aware overlays.
+- ✅ **Seamless YouTube Integration**: Process videos from a simple YouTube URL.
+- ✅ **Download or Auto-Schedule**: Direct download or schedule uploads to your Shorts channel.
+
+---
 
 ## 🧰 Tech Stack
-- Python 3.9+
-- Gradio UI Framework
-- FFmpeg for video processing
-- OpenAI Whisper for transcription
-- OpenAI GPT for caption generation
-- Modal for cloud processing
-- Google Gemini (optional alternative)
 
-## 🏗️ Architecture Diagram
-![Architecture Diagram](![architechture diagram](image-5.png)) 
+- **Python 3.9+**
+- **Gradio** (for web UI)
+- **FFmpeg** (video slicing)
+- **OpenAI Whisper** (transcription)
+- **OpenAI GPT / Gemini LLM** (caption generation, timestamp detection)
+- **Modal** (cloud deployment & serverless compute)
 
-**Architecture Flow:**
-1. **Input Processing** - YouTube URL or local video file is processed
-2. **Transcription Engine** - Video audio is transcribed using Whisper
-3. **Content Analysis** - AI analyzes transcript to identify key moments
-4. **Smart Highlight Selection** - The most engaging segments are identified based on content type
-5. **Video Processing** - FFmpeg creates optimized video clips
-6. **Caption Generation** - Engaging captions and hashtags are generated for each clip
-7. **Output Delivery** - Final shorts are delivered to the user
+---
+
+## 🏗️ Architecture
+
+![Architecture Diagram](image-5.png)
+
+### 📦 Pipeline:
+
+1. **Input**: YouTube link or local file  
+2. **Transcription**: Whisper model extracts accurate timestamped transcript  
+3. **Analysis**: Gemini/GPT filters highlights based on selected content style  
+4. **Clipping**: FFmpeg trims segments using timestamps  
+5. **Captioning**: Catchy captions & hashtags generated  
+6. **Output**: Final clips ready to download or publish
+
+---
 
 ## 🧪 How to Use
 
-### Prerequisites
-- Python 3.9+
-- FFmpeg installed and in your PATH
-- OpenAI API key (for caption generation)
+### ⚙️ Prerequisites
 
-### Installation
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+- Python 3.9+
+- FFmpeg installed & added to `PATH`
+- OpenAI API Key
+
+---
+
+### 💻 Installation
+
+```bash
+git clone https://github.com/VanshGoyal000/shorts-generator
+cd shorts-generator
+pip install -r requirements.txt
 3. Create a `.env` file with your API keys:
    ```
    OPENAI_API_KEY=your_key_here
