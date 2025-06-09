@@ -1,0 +1,4 @@
+from .highlight_prompt import HIGHLIGHT_SELECTION_PROMPT
+from .caption_prompt import CAPTION_GENERATION_PROMPT
+
+__all__ = ["HIGHLIGHT_SELECTION_PROMPT", "CAPTION_GENERATION_PROMPT"]
